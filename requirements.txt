@@ -3,6 +3,6 @@ flask-cors==4.0.0
 requests==2.31.0
 beautifulsoup4==4.12.3
 groq==0.5.0
-llama-index==0.10.0
+llama-index>=0.12.0  # Newer versions support Python 3.13
 python-dotenv==1.0.0
 gunicorn==21.2.0
