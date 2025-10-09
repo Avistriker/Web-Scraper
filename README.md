@@ -47,19 +47,7 @@ This is the **Flask web server**. It exposes all REST API endpoints, serves the 
   - `/chat` : Accepts a user message + context, returns LLM response.
   - `/select_model` : Allows switching between LLM models.
 
-### Main Architecture (Flowchart)
 
-```mermaid
-flowchart TD
-    A[User requests /] --> B[Render index.html]
-    C[POST /scrape] --> D[Call scrape_website(url)]
-    D --> E[Summarize with summarize_text]
-    E --> F[Return scraped_text + summary]
-    G[POST /chat] --> H[chat_with_llm(message, context)]
-    H --> I[Return LLM response]
-    J[POST /select_model] --> K[select_model(model_name)]
-    K --> L[Return status message]
-```
 
 ---
 
