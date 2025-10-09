@@ -201,22 +201,6 @@ This file handles all the **core logic** for scraping, cleaning, summarizing, ch
 | Llama3.1           | llama-3.1-8b-instant   | 🦙       |
 | Mixtral New        | mixtral-8x7b-32768     | 🚀       |
 
-### Scraping & LLM Data Flow
-
-```mermaid
-flowchart TD
-    A[User submits URL (frontend)] --> B[/scrape API]
-    B --> C[scrape_website(url)]
-    C --> D[clean_text]
-    D --> E[summarize_text(text, model)]
-    E --> F[Groq LLM API call]
-    F --> G[Return summary to frontend]
-
-    H[User sends chat message (frontend)] --> I[/chat API]
-    I --> J[chat_with_llm(message, context, model)]
-    J --> K[Groq LLM API call]
-    K --> L[Return chatbot answer]
-```
 
 ### Core Functions
 
