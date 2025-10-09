@@ -1,4 +1,4 @@
-# Web Striker 4.0 
+# Web Striker 4.0 /Web-Scraper
 
 Welcome to the detailed documentation for **Web Striker 4.0**! This project provides a full-stack web application to scrape website content, summarize it using advanced LLMs (Large Language Models), and interact with a chatbot based on the scraped content. The app features model switching and a user-friendly interface.
 
